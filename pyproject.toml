@@ -9,6 +9,8 @@ mons_gui = "mons_gui.cli:main"
 
 [tool.poetry.dependencies]
 python = "^3.9"
+tk = "^0.1.0"
+pysimplegui = "^4.57.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

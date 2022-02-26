@@ -14,7 +14,10 @@
       defaultPackage = (pkgs.poetry2nix.mkPoetryApplication {
         projectDir = ./.;
       }).overrideAttrs (oldAttrs: {
-        buildInputs = oldAttrs.buildInputs ++ [ pkgs.mons ];
+        buildInputs = oldAttrs.buildInputs ++ [ 
+          pkgs.mons
+          pkgs.tk
+        ];
       });
       # packages.x86_64-linux. = nixpkgs.legacyPackages.x86_64-linux.hello;
       # defaultPackage.x86_64-linux = self.packages.x86_64-linux.hello;
